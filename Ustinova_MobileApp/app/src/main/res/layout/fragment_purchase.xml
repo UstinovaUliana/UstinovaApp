@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#D9D9D9"
+    tools:context=".PurchaseFragment">
+
+    <!-- TODO: Update blank fragment layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="316dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="75dp"
+            android:paddingTop="5dp"
+            android:paddingRight="75dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:text="Время пути:" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape"
+                    android:drawableLeft="@drawable/clock"
+                    android:drawablePadding="5dp"
+                    android:hint="5 - 10 мин"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#00000000"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="70dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="21dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Формат печати:" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:scrollbarDefaultDelayBeforeFade="0">
+
+                <RadioButton
+                    android:id="@+id/grayRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="Ч/б"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <RadioButton
+                    android:id="@+id/colorRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Цветная"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="90dp"
+            android:paddingTop="5dp"
+            android:paddingRight="90dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="12dp"
+                android:text="Кол-во листов:" />
+
+            <EditText
+                android:id="@+id/editQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape"
+                android:ems="3"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="1"
+                android:textColorHint="#000000"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/increaseBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:paddingBottom="3dp"
+                    android:src="@drawable/increasebtn"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                    tools:src="@drawable/increasebtn" />
+
+                <ImageButton
+                    android:id="@+id/decreaseBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:paddingTop="3dp"
+                    android:src="@drawable/decreasebtn"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                    tools:src="@drawable/decreasebtn" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="110dp"
+            android:paddingTop="5dp"
+            android:paddingRight="110dp">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Цена:" />
+
+            <EditText
+                android:id="@+id/editPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColorHint="#000000"
+                android:background="@drawable/shape"
+                android:ems="3"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="90р"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/sendFileBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="150dp"
+            android:paddingTop="5dp"
+            android:paddingRight="150dp"
+            android:paddingBottom="5dp"
+            android:src="@drawable/sendbtnstyles"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:src="@drawable/sendbtnstyles" />
+
+        <ImageButton
+            android:id="@+id/backwardBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="150dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="150dp"
+            android:src="@drawable/backwardbtnstyle"
+            tools:src="@drawable/backwardbtnstyle" />
+
+        <ImageButton
+            android:id="@+id/endBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="150dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="150dp"
+            android:src="@drawable/endbtnstyles"
+            tools:src="@drawable/endbtnstyles" />
+    </LinearLayout>
+
+</FrameLayout>
